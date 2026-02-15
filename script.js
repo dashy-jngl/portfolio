@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = new FormData(form);
 
         try {
-            const res = await fetch('https://formspree.io/hash.chisako@gmail.com', {
+            const res = await fetch('https://formspree.io/f/mdalgwjv', {
                 method: 'POST',
                 headers: { 'Accept': 'application/json' },
                 body: data
