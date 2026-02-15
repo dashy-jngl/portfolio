@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johan Van Gass — Software Developer</title>
+    <meta name="description" content="Portfolio of Johan Van Gass — Full-Stack Software Developer specializing in ERP systems, Python, React, and production automation.">
+    <meta name="author" content="Johan Van Gass">
+    <meta property="og:title" content="Johan Van Gass — Software Developer">
+    <meta property="og:description" content="Full-stack developer. ERP architect. Self-taught engineer.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="mobile-brand">
+            <div class="mobile-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span>Johan Van Gass</span>
+        </div>
+        <div class="mobile-social">
+            <a href="https://github.com/dashy-jngl" target="_blank" rel="noopener" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="mailto:hash.chisako@gmail.com" title="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="layout">
+
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <div class="sidebar-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <div class="sidebar-brand-text">
+                    <span class="name">Johan Van Gass</span>
+                    <span class="role">Software Developer</span>
+                </div>
+            </div>
+
+            <div class="sidebar-label">Navigate</div>
+            <nav class="sidebar-nav">
+                <a href="#intro" class="sidebar-link active">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+                    Introduction
+                </a>
+                <a href="#skills" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 2 2 4-4"/><path d="M21 12V8.5C21 5.5 16.5 3 12 3S3 5.5 3 8.5V12c0 3 4.5 5.5 9 5.5"/></svg>
+                    Skills &amp; Tools
+                </a>
+                <a href="#projects" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/></svg>
+                    Projects
+                </a>
+                <a href="#experience" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    Experience
+                </a>
+                <a href="#certs" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+                    Certifications
+                </a>
+                <a href="#contact" class="sidebar-link">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Contact
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-status">
+                    <div class="status-dot"></div>
+                    <div class="status-text"><strong>Open to work</strong><br>Adelaide, Australia</div>
+                </div>
+                <div class="sidebar-social">
+                    <a href="https://github.com/dashy-jngl" target="_blank" rel="noopener" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="#contact" title="Contact">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="main">
+
+            <!-- Hero -->
+            <section id="intro" class="hero">
+                <div class="hero-eyebrow">🏅 PhilNITS Certified · ITEE Aligned</div>
+                <h1>Johan Van Gass</h1>
+                <p class="tagline">
+                    Full-stack developer who builds <em>real systems</em> that run real businesses.
+                </p>
+                <p class="hero-bio">
+                    <strong>Self-taught engineer</strong> with 3+ years designing and shipping production software
+                    for manufacturing. Architected a <strong>complete ERP system from scratch</strong> — from database
+                    design to barcode-driven production tracking — that a company runs on every day.
+                    I learn by building. I build things that work.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://github.com/dashy-jngl" target="_blank" rel="noopener" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        View GitHub
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        Get in Touch
+                    </a>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="section">
+                <div class="section-header">
+                    <h2><span class="icon">⚡</span> Skills &amp; Tools</h2>
+                </div>
+                <div class="skills-grid">
+                    <span class="skill-tag primary">Python</span>
+                    <span class="skill-tag primary">JavaScript</span>
+                    <span class="skill-tag primary">TypeScript</span>
+                    <span class="skill-tag primary">React</span>
+                    <span class="skill-tag">Next.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">HTML / CSS</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub Actions / CI</span>
+                    <span class="skill-tag">Linux Administration</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag gold">ERP Architecture</span>
+                    <span class="skill-tag gold">Database Design</span>
+                    <span class="skill-tag gold">Barcode / RFID Systems</span>
+                    <span class="skill-tag gold">Production Scheduling</span>
+                    <span class="skill-tag gold">Process Automation</span>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section">
+                <div class="section-header">
+                    <h2><span class="icon">🔨</span> Projects</h2>
+                </div>
+                <div class="projects-grid">
+
+                    <!-- BlindVision ERP -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <h3>🏭 BlindVision — Enterprise Resource Planning System</h3>
+                            <span class="project-badge badge-proprietary">Proprietary</span>
+                        </div>
+                        <p class="project-desc">
+                            A full-scale ERP platform I designed and built entirely from scratch for a manufacturing company.
+                            BlindVision is the operational backbone of the business — every order, every product, every
+                            production run flows through it daily.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Architected the entire system end-to-end: database schema, backend API, and front-end interface</li>
+                            <li>Inventory management engine tracking raw materials, finished goods, and work-in-progress across the warehouse</li>
+                            <li>Production planning &amp; scheduling module with computer-assisted optimization algorithms that allocate resources and sequence jobs across manufacturing lines</li>
+                            <li>Real-time production tracking via barcode scanning — operators scan items at each stage, giving management live visibility into throughput and bottlenecks</li>
+                            <li>Order processing pipeline from customer intake through to dispatch, with automated data processing that eliminated hours of manual entry per week</li>
+                            <li>Customer &amp; supplier database with full relational data modeling</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>JavaScript</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>EJS</span>
+                                <span>Barcode / RFID</span>
+                                <span>SSL / HTTPS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ticket System -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <h3>🎫 Internal Ticket Management System</h3>
+                            <span class="project-badge badge-proprietary">Proprietary</span>
+                        </div>
+                        <p class="project-desc">
+                            A full-stack issue tracking and task management application built to coordinate
+                            workflows across teams. Designed with a clean, responsive UI and role-based access control.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Role-based authentication system with NextAuth — admin, member, and restricted access tiers</li>
+                            <li>Dynamic ticket cards with priority levels, status tracking, and progress indicators</li>
+                            <li>Component-driven architecture with reusable React components, dark/light theme support</li>
+                            <li>MongoDB-backed with Mongoose models for tickets and users</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>React</span>
+                                <span>MongoDB</span>
+                                <span>NextAuth</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- yt-dlp-wu -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <h3>📺 yt-dlp-wu — Streaming Platform Extractor Plugin</h3>
+                            <span class="project-badge badge-public">Open Source</span>
+                        </div>
+                        <p class="project-desc">
+                            A custom extractor plugin for <strong>yt-dlp</strong> (the most widely-used media downloader)
+                            that adds full support for a niche Japanese streaming platform. Required reverse-engineering
+                            the platform's API, handling authentication flows, and conforming to yt-dlp's plugin architecture.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Reverse-engineered a proprietary streaming API to extract authenticated video streams</li>
+                            <li>Built as a standalone yt-dlp extractor plugin following the project's extension architecture</li>
+                            <li>Automated CI/CD pipeline via GitHub Actions — builds and packages on every push</li>
+                            <li>Published and maintained as open source with active users</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>yt-dlp Plugin API</span>
+                                <span>GitHub Actions</span>
+                                <span>CI/CD</span>
+                            </div>
+                            <a href="https://github.com/dashy-jngl/yt-dlp-wu" target="_blank" rel="noopener" class="project-link">
+                                View on GitHub
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- stardom-card -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <h3>🎤 stardom-card — Event Schedule CLI</h3>
+                            <span class="project-badge badge-public">Open Source</span>
+                        </div>
+                        <p class="project-desc">
+                            A Python CLI tool that scrapes and presents upcoming professional wrestling event
+                            schedules in a clean terminal format. Built with proper Python packaging standards
+                            for easy installation via pip.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Web scraping engine that parses live event data from external sources</li>
+                            <li>Clean CLI interface with structured, readable terminal output</li>
+                            <li>Packaged with pyproject.toml and modular source layout (separated CLI entry point from core logic)</li>
+                            <li>Published under MIT license</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>CLI</span>
+                                <span>Web Scraping</span>
+                                <span>pyproject.toml</span>
+                            </div>
+                            <a href="https://github.com/dashy-jngl/stardom-card" target="_blank" rel="noopener" class="project-link">
+                                View on GitHub
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Barcode Tools -->
+                    <div class="project-card">
+                        <div class="project-top">
+                            <h3>🏷️ Industrial Barcode &amp; Label Automation Suite</h3>
+                            <span class="project-badge badge-proprietary">Proprietary</span>
+                        </div>
+                        <p class="project-desc">
+                            A collection of Python tools purpose-built for generating, formatting, and printing
+                            industrial barcodes and QR codes on the manufacturing floor. Tightly integrated with
+                            the BlindVision ERP to automate label production for inventory and dispatch.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Supports multiple barcode standards (Code 128, QR, Data Matrix) via treepoem</li>
+                            <li>Custom label layout engine using Pillow for pixel-perfect sticker formatting</li>
+                            <li>Batch generation workflows — operators trigger label runs directly from production data</li>
+                            <li>Integrated with physical label printers for zero-touch dispatch labeling</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>treepoem</span>
+                                <span>Pillow</span>
+                                <span>Barcode Standards</span>
+                                <span>Label Printing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="section">
+                <div class="section-header">
+                    <h2><span class="icon">💼</span> Experience</h2>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-top">
+                        <h3>ScreenAway Technologies</h3>
+                        <span class="exp-date">Aug 2021 — Present</span>
+                    </div>
+                    <div class="exp-role">Software Developer / Technical Team Lead</div>
+                    <p class="exp-blurb">Progressed from the production floor to leading all software development — designed, built, and now maintain the systems the company runs on.</p>
+                    <ul>
+                        <li>Architected and developed a full-scale ERP system from the ground up, owning the complete software development lifecycle</li>
+                        <li>Designed relational database schemas handling inventory, orders, production scheduling, and customer data</li>
+                        <li>Built real-time production tracking with barcode scanning, giving management live visibility into manufacturing operations</li>
+                        <li>Automated data processing pipelines that eliminated significant manual data entry workload weekly</li>
+                        <li>Created computer-assisted optimization algorithms for production and materials scheduling</li>
+                        <li>Led cross-functional team of production staff with daily technical briefings</li>
+                        <li>Primary point of contact for customer technical requirements and order processing</li>
+                    </ul>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-top">
+                        <h3>RexIT Computer Services</h3>
+                        <span class="exp-date">Mar 2016 — Present</span>
+                    </div>
+                    <div class="exp-role">Founder / IT Technician</div>
+                    <ul>
+                        <li>Founded and operated an independent computer repair and services business</li>
+                        <li>Diagnosed and resolved hardware and software issues across a diverse client base</li>
+                        <li>Provided technical consultation, system optimization, and software installation services</li>
+                        <li>Built client relationships through reliable service and clear technical communication</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certs" class="section">
+                <div class="section-header">
+                    <h2><span class="icon">🏅</span> Certifications</h2>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <div class="cert-icon">🇯🇵</div>
+                        <div class="cert-info">
+                            <strong>PhilNITS — IT Standards Examination</strong>
+                            <span>Internationally recognized certification aligned with Japan's ITEE standards</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">⚡</div>
+                        <div class="cert-info">
+                            <strong>Certificate II in Electronics</strong>
+                            <span>TAFE SA</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🚨</div>
+                        <div class="cert-info">
+                            <strong>SES Volunteer — Rescue &amp; Emergency Response</strong>
+                            <span>Rescue operations, communications systems, emergency response certifications</span>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🩹</div>
+                        <div class="cert-info">
+                            <strong>Apply First Aid Certificate</strong>
+                            <span>St John Ambulance</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="section">
+                <div class="section-header">
+                    <h2><span class="icon">📬</span> Contact</h2>
+                </div>
+                <form class="contact-form" action="https://formsubmit.co/hash.chisako@gmail.com" method="POST">
+                    <!-- FormSubmit config -->
+                    <input type="hidden" name="_subject" value="Portfolio Contact — New Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="">
+                    <input type="text" name="_honey" style="display:none">
+
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="What would you like to discuss?" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        Send Message
+                    </button>
+                </form>
+            </section>
+
+            <footer>
+                <p>© 2026 Johan Van Gass · Adelaide, Australia</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
