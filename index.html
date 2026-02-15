@@ -386,13 +386,8 @@
                 <div class="section-header">
                     <h2><span class="icon">📬</span> Contact</h2>
                 </div>
-                <form class="contact-form" action="https://formsubmit.co/hash.chisako@gmail.com" method="POST">
-                    <!-- FormSubmit config -->
-                    <input type="hidden" name="_subject" value="Portfolio Contact — New Message">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_next" value="">
+                <form class="contact-form" id="contactForm">
                     <input type="text" name="_honey" style="display:none">
-
                     <div class="form-row">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -405,11 +400,21 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="What would you like to discuss?" required></textarea>
                     </div>
-                    <button type="submit" class="form-submit">
+                    <button type="submit" class="form-submit" id="submitBtn">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                         Send Message
                     </button>
                 </form>
+
+                <!-- Modal Overlay -->
+                <div class="modal-overlay" id="modalOverlay">
+                    <div class="modal" id="modal">
+                        <div class="modal-icon" id="modalIcon">⏳</div>
+                        <h3 id="modalTitle">Sending...</h3>
+                        <p id="modalText">Hang tight, your message is on its way.</p>
+                        <button class="modal-close" id="modalClose" style="display:none">Got it</button>
+                    </div>
+                </div>
             </section>
 
             <footer>
