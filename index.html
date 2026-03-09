@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Johan Van Gass — Software Developer</title>
-    <meta name="description" content="Portfolio of Johan Van Gass — Full-Stack Software Developer specializing in ERP systems, Python, React, and production automation.">
+    <meta name="description" content="Portfolio of Johan Van Gass — Full-Stack Software Developer specializing in Go, Python, ERP systems, and production automation.">
     <meta name="author" content="Johan Van Gass">
     <meta property="og:title" content="Johan Van Gass — Software Developer">
     <meta property="og:description" content="Full-stack developer. ERP architect. Self-taught engineer.">
@@ -123,6 +123,7 @@
                     <h2><span class="icon">⚡</span> Skills &amp; Tools</h2>
                 </div>
                 <div class="skills-grid">
+                    <span class="skill-tag primary">Go</span>
                     <span class="skill-tag primary">Python</span>
                     <span class="skill-tag primary">JavaScript</span>
                     <span class="skill-tag primary">React</span>
@@ -130,7 +131,10 @@
                     <span class="skill-tag">TypeScript (familiar)</span>
                     <span class="skill-tag">Node.js</span>
                     <span class="skill-tag">Express</span>
+                    <span class="skill-tag">Gin</span>
+                    <span class="skill-tag">GORM</span>
                     <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">SQLite</span>
                     <span class="skill-tag">MongoDB</span>
                     <span class="skill-tag">REST APIs</span>
                     <span class="skill-tag">HTML / CSS</span>
@@ -138,11 +142,14 @@
                     <span class="skill-tag">GitHub Actions / CI</span>
                     <span class="skill-tag">Linux Administration</span>
                     <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">Concurrent Systems</span>
+                    <span class="skill-tag">Web Scraping</span>
                     <span class="skill-tag gold">ERP Architecture</span>
                     <span class="skill-tag gold">Database Design</span>
                     <span class="skill-tag gold">Barcode / RFID Systems</span>
                     <span class="skill-tag gold">Production Scheduling</span>
                     <span class="skill-tag gold">Process Automation</span>
+                    <span class="skill-tag gold">ELO / Ranking Algorithms</span>
                 </div>
             </section>
 
@@ -152,6 +159,44 @@
                     <h2><span class="icon">🔨</span> Projects</h2>
                 </div>
                 <div class="projects-grid">
+
+                    <!-- Joshi Rankings API — FEATURED -->
+                    <div class="project-card featured">
+                        <div class="project-top">
+                            <h3>🤼‍♀️ Joshi Rankings API — ELO Power Rankings Engine</h3>
+                            <span class="project-badge badge-public">Open Source</span>
+                        </div>
+                        <p class="project-desc">
+                            A full-stack <strong>Go REST API</strong> that tracks women's professional wrestling match results
+                            across multiple promotions and calculates dynamic power rankings using an ELO rating system.
+                            <strong>20,000+ lines of code</strong> across 80 files — my largest open-source project.
+                        </p>
+                        <ul class="project-highlights">
+                            <li>Built a complete Go application (Gin + GORM + SQLite) with RESTful API design, full auth system, CSRF protection, rate limiting, and CORS middleware</li>
+                            <li>Concurrent web scraping system using goroutines and fan-out pattern to collect match data from multiple promotion websites (Stardom, TJPW, Cagematch)</li>
+                            <li>Custom ELO rating algorithm with title match multipliers and upset bonuses for dynamic power rankings — global or per-promotion</li>
+                            <li>Fuzzy name matching engine with Japanese ↔ English alias support for accurate cross-source data correlation</li>
+                            <li>Match prediction engine, network visualization, title tracking, head-to-head stats, and ELO history endpoints</li>
+                            <li>Interface-driven architecture — WrestlerStore and RankingCalculator interfaces make it easy to swap SQLite for Postgres, or ELO for Glicko-2</li>
+                            <li>Complete static frontend with responsive HTML/CSS/JS interface and SEO/sitemap generation</li>
+                        </ul>
+                        <div class="project-footer">
+                            <div class="project-tech">
+                                <span>Go</span>
+                                <span>Gin</span>
+                                <span>GORM</span>
+                                <span>SQLite</span>
+                                <span>Goroutines</span>
+                                <span>Colly (Scraping)</span>
+                                <span>ELO Algorithm</span>
+                                <span>REST API</span>
+                            </div>
+                            <a href="https://github.com/dashy-jngl/joshi-rankings-api" target="_blank" rel="noopener" class="project-link">
+                                View on GitHub
+                                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg>
+                            </a>
+                        </div>
+                    </div>
 
                     <!-- BlindVision ERP -->
                     <div class="project-card">
