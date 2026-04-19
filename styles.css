@@ -458,16 +458,10 @@ body::after {
 }
 
 /* ===== SKILLS ===== */
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
 .skill-tag {
     padding: 7px 16px;
-    background: var(--black-card);
-    border: 1px solid var(--border);
+    background: var(--black);
+    border: 1px solid var(--border-glow);
     border-radius: var(--radius-xs);
     font-size: 0.78rem;
     font-family: 'JetBrains Mono', monospace;
@@ -493,6 +487,66 @@ body::after {
     color: var(--gold);
     background: var(--gold-glow);
     box-shadow: 0 0 10px rgba(245, 158, 11, 0.06);
+}
+
+/* ===== SKILL CATEGORIES ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.skill-category {
+    background: var(--black-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: all 0.25s;
+}
+
+.skill-category:hover {
+    border-color: var(--border-glow);
+}
+
+.skill-category h3 {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--white-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* ===== ADDITIONAL ===== */
+.additional-list {
+    list-style: none;
+    padding: 0;
+    background: var(--black-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 28px;
+}
+
+.additional-list li {
+    color: var(--white-muted);
+    font-size: 0.88rem;
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+.additional-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 700;
 }
 
 /* ===== PROJECT CARDS ===== */
